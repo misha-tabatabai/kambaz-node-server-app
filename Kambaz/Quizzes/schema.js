@@ -18,7 +18,8 @@ const quizSchema = new mongoose.Schema({
     oneQuestionAtATime: Boolean,
     webcamRequired: Boolean,
     lockQuestionsAfterAnswering: Boolean,
-    published: Boolean
+    published: Boolean,
+    attempts: Number
 },
     { collection: "quizzes" }
 );
