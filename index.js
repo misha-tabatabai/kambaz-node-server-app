@@ -10,7 +10,8 @@ import CourseRoutes from "./Kambaz/Courses/routes.js";
 import ModuleRoutes from "./Kambaz/Modules/routes.js";
 import AssignmentRoutes from './Kambaz/Assignments/routes.js';
 import EnrollmentRoutes from './Kambaz/Enrollments/routes.js';
-
+import QuizRoutes from './Kambaz/Quizzes/routes.js';
+import QuizQuestionRoutes from './Kambaz/QuizQuestions/routes.js';
 const app = express();
 app.use(
     cors({
@@ -45,6 +46,8 @@ CourseRoutes(app);
 ModuleRoutes(app);
 AssignmentRoutes(app);
 EnrollmentRoutes(app);
+QuizRoutes(app);
+QuizQuestionRoutes(app);
 
 
 app.listen(process.env.PORT || 4000)
